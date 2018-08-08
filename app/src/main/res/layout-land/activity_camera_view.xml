@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vnpt.iot.hoalac.core.activity.control.CameraViewActivity">
+    <RelativeLayout
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="Camera View"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/code"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <VideoView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

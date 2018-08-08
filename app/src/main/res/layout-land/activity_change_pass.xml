@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vnpt.iot.hoalac.core.activity.user.ChangePassActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/header">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/nonColor"
+            android:onClick="pressBack"
+            android:src="@mipmap/btn_back_white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btnChangePass"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:textSize="17dp"
+                    android:text="@string/oldPass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/edittext_no_border"
+                    android:id="@+id/oldPass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:textSize="17dp"
+                    android:text="@string/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/edittext_no_border"
+                    android:id="@+id/password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:textSize="17dp"
+                    android:text="@string/rePass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/edittext_no_border"
+                    android:id="@+id/rePass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:onClick="goSave"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_green_radius"
+                    android:text="@string/save"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

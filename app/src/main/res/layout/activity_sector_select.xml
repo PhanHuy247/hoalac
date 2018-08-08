@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vnpt.iot.hoalac.core.activity.SectorSelectActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/selectGreenHouse"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/listFarm"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <Spinner
+                android:id="@+id/listGreenHouse"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:onClick="next"
+                    android:textColor="@color/white"
+                    android:text="@string/next"
+                    android:background="@drawable/button_green_radius"
+                    android:layout_centerInParent="true"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

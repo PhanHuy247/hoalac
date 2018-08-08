@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normalBackground"
+    android:orientation="vertical"
+    tools:context="com.vnpt.iot.hoalac.core.activity.NotificationActivity">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/alarm"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@color/nonColor"
+            android:src="@mipmap/setting"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <com.softw4re.views.InfiniteListView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/infiniteListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipeRefreshIndicatorColor="@color/green"
+        app:scrollbarVisible="true"
+        app:dividerVisible="false" />
+    <ListView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listNotify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

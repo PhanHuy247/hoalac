@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rootBackground"
+    android:orientation="vertical"
+    tools:context="com.vnpt.iot.hoalac.core.activity.SettingActivity">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/menu_setting"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/rootBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Server local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/ipServer"
+                        android:gravity="center"
+                        android:hint="IP"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/portServer"
+                        android:gravity="center"
+                        android:hint="PORT"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Ip camera 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Http://"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="1"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:gravity="center"
+                        android:hint="HOST:PORT"
+                        android:id="@+id/ipCam1"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="ID Camera:"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:gravity="center"
+                        android:id="@+id/idCam1"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Ip camera 2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Http://"
+                        android:gravity="right|center_vertical"
+                        android:maxLines="1"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:gravity="center"
+                        android:hint="HOST:PORT"
+                        android:maxLines="1"
+                        android:id="@+id/ipCam2"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="ID Camera:"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:gravity="center"
+                        android:id="@+id/idCam2"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_green_radius"
+                android:onClick="save"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

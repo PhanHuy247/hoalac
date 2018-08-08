@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vnpt.iot.hoalac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".core.activity.WelcomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".core.service.CCSFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".core.service.CCSFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".core.activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".core.activity.control.CameraControlActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vnpt.iot.hoalac.core.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".core.activity.groupTime.CropActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.NotificationActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.groupTime.GrowthScheduleActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.groupTime.PhaseActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.groupTime.AddGroupTimeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.groupTime.SummaryGroupTimeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.EnvironmentInfoActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.procedureManagement.ProcedureManagementActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.procedureManagement.DetailProcedureManagementActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".core.activity.searchSource.SearchSourceActivity" />
+        <activity
+            android:name=".core.activity.searchSource.SearchResultActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.asset.AssetActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.dailyNoteActivity.DailyNoteActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.dailyNoteActivity.AddDailyNoteActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.control.ControlWaterActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.control.ScheduleActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.SettingActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.LoginActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.user.LostPassActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.user.UserActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.user.EditUserActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.user.ChangePassActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".core.activity.SectorSelectActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".core.activity.groupTime.PhaseDetailActivity" />
+        <activity
+            android:name=".core.activity.schedule.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:parentActivityName=".core.activity.CommonActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vnpt.iot.hoalac.core.activity.CommonActivity" />
+        </activity>
+        <activity android:name=".core.activity.asset.AssetImportDetailActivity" />
+        <activity android:name=".core.activity.asset.AssetExportDetailActivity" />
+        <activity android:name=".core.activity.dailyNoteActivity.DailyNoteDetailActivity" />
+        <activity android:name=".core.activity.control.ControlSubDeviceActivity" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleLightDetail" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleFogFanDetail" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleTankBasteActivity" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleTankBlendActivity" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleAquaponicDetailActivity" />
+        <activity android:name=".core.activity.schedule.detail.ScheduleSunshadeNetDetail" />
+        <activity android:name=".core.activity.schedule.detail.SchedulePlanNursingActivity" />
+        <activity android:name=".core.activity.calendarAuto.CalendarAuto"></activity>
+    </application>
+
+</manifest>

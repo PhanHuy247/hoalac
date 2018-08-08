@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normalBackground"
+    tools:context="com.vnpt.iot.hoalac.core.activity.procedureManagement.ProcedureManagementActivity">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/menu_process"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Spinner>
+            <Spinner
+                android:id="@+id/spProduct"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Spinner>
+            <Button
+                android:onClick="filter"
+                android:text="@string/filter"
+                android:textColor="@color/green"
+                android:background="@color/nonColor"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ListView
+            android:layout_marginTop="10dp"
+            android:background="@color/normalBackground"
+            android:id="@+id/listProcess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

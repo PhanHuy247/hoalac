@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vnpt.iot.hoalac.core.activity.groupTime.PhaseDetailActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/cropDetail"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="9dp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:background="@color/textNormal"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/basicInformation"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:background="@color/textNormal"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:elevation="3dp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/nameProduct"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/processName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/processName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/setStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/greenHouse"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textNormal"
+                    android:text="@string/qRQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/qRQuantity"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="9dp"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:background="@color/textNormal"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/progress"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:background="@color/textNormal"
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

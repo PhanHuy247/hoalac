@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.vnpt.iot.hoalac.core.activity.user.LostPassActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/back_green"
+            android:tint="@color/colorPrimary"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textColor="@color/green"
+            android:text="@string/lostPassword"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@mipmap/key"
+                android:tint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35">
+            <TextView
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:text="@string/lostPasswordNote"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

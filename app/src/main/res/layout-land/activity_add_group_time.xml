@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vnpt.iot.hoalac.core.activity.groupTime.AddGroupTimeActivity">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/create"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.vnpt.iot.hoalac.core.custom.multiSelectionSpinner.MultiSelectionSpinner
+                android:id="@+id/multiSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.vnpt.iot.hoalac.core.custom.multiSelectionSpinner.MultiSelectionSpinner>
+            <TextView
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="@string/typeCultivation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Trồng trên đất"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Thủy canh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="@string/setBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Luống A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Luống B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="@string/setProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Quy trình rau 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:text="Thiết lập quy trình mới"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <EditText
+                android:onClick="showCalendar"
+                android:focusable="false"
+                android:drawableRight="@mipmap/calendar_nomal"
+                android:layout_marginTop="15dp"
+                android:hint="@string/setStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="goSubmit"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_green_radius"
+                android:text="@string/next"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

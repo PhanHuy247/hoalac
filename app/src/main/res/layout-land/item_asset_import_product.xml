@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:elevation="3dp"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/materials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/materials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/textNormal"
+            android:text="@string/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textNormal"
+            android:id="@+id/title5"
+            android:text="@string/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>

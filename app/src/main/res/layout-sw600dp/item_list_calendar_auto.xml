@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtHouseChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNameValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtHouseChickenValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtCodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtStateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/text_size_item_calendar_auto_tablet"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:paddingTop="@dimen/dimen_5dp" />
+
+        <ListView
+            android:id="@+id/lvListItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+    ></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llItemInside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/QUAT_THONG_GIO"
+                android:layout_marginBottom="@dimen/dimen_5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"
+                android:layout_marginBottom="@dimen/dimen_5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:id="@+id/txtSoLuongQuatChayToiThieu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/SO_LUONG_QUAT_CHAY_TOI_THIEU"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txtSoLuongQuatChayToiThieuValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/dimen_5dp">
+
+                <TextView
+                    android:id="@+id/txtThoiGianDaoQuatThongGio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:textSize="@dimen/text_size_item_list_animal_tablet"
+                    android:textColor="@color/black"
+                    android:text="@string/THOI_GIAN_DAO_QUAT_THONG_GIO"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/txtThoiGianDaoQuatThongGioValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_item_list_animal_tablet"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/TOC_DO_TOI_THIEU"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtQUATKHITUOI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/QUAT_KHI_TUOI_"/>
+
+                    <TextView
+                        android:id="@+id/txtQuatKhiTran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/QUAT_KHI_TRAN"/>
+                    <TextView
+                        android:id="@+id/txtQuatKhiNgang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/QUAT_KHI_NGANG"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtQUATKHITUOIValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtQuatKhiTranValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/txtQuatKhiNgangValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/NHIET_DO_TRONG_CHUONG"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/dimen_5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Tu_do_C"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Den_do_C"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNhietdotrongchuongTuValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtNhietdotrongchuongDenValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/NHIET_DO_NGOAI_CHUONG"/>
+            <TextView
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Tu_do_C"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Den_do_C"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNhietdongoaichuongTuValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtNhietdongoaichuongDenValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/DO_AM_CHUONG"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Tu_Phan_Tram"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Den_Phan_Tram"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDOAMchuongTuValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtDOAMchuongDenValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_item_title_calendar_auto"
+                android:text="@string/NONG_DO_C02_TRONG_CHUONG"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textNormal"
+                android:layout_marginTop="@dimen/dimen_5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Tu_PPM"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"
+                        android:text="@string/Den_PPM"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPPMTUValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/txtPPMDenValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:textSize="@dimen/text_size_item_list_animal_tablet"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

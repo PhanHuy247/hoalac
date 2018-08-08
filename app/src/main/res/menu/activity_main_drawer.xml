@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        android:layout_gravity="end"
+        android:gravity="end">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/organic4u"
+            android:title="@string/overView" />
+        <item
+            android:id="@+id/nav_dailyGrowthReport"
+            android:icon="@mipmap/ic_menu_lichtangtruong"
+            android:title="@string/dailyGrowthReport" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@mipmap/shower_off"
+            android:title="@string/menu_irrigation_more" />
+        <item
+            android:id="@+id/nav_group_time"
+            android:icon="@mipmap/ic_menu_quanlydot"
+            android:title="@string/menu_crop_mng" />
+        <item
+            android:id="@+id/nav_evi_info"
+            android:icon="@mipmap/ic_menu_thongsomoitruong"
+            android:title="@string/menu_statistic" />
+        <item
+            android:id="@+id/nav_follow"
+            android:icon="@mipmap/ic_menu_quanlychutrinh"
+            android:title="@string/menu_process" />
+        <item
+            android:id="@+id/nav_make"
+            android:icon="@mipmap/ic_menu_truyxuatnguongoc"
+            android:title="@string/menu_seek_origin" />
+        <item
+            android:id="@+id/nav_money"
+            android:icon="@mipmap/ic_menu_vattu"
+            android:title="@string/menu_material_expense" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@mipmap/ic_menu_taikhoan"
+            android:title="@string/menu_diary_work" />
+        <item
+            android:id="@+id/selectFarm"
+            android:icon="@mipmap/ic_change_sector"
+            android:title="@string/selectGreenHouse" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@mipmap/ic_menu_dangxuat"
+            android:title="@string/menu_logout" />
+        <item
+            android:layout_marginTop="20dp"
+            android:id="@+id/nav_lang"
+            android:title=""
+            android:icon="@mipmap/ic_menu_language"
+            app:actionLayout="@layout/switch_language"/>
+    </group>
+
+</menu>

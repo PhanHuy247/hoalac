@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_item_list_animal">13dp</dimen>
+
+    <dimen name="text_size_header_list_animal">15dp</dimen>
+    <dimen name="text_size_item_calendar_auto">17dp</dimen>
+    <dimen name="text_size_item_title_calendar_auto">20dp</dimen>
+    <dimen name="padding_item_list_animal">5dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+
+    <dimen name="margin_text_value">65dp</dimen>
+    <dimen name="margin_text_value_with_image">90dp</dimen>
+    <dimen name="margin_text_value_overload">115dp</dimen>
+    <dimen name="margin_text_overload_with_image">140dp</dimen>
+    <dimen name="margin_text_value_error_with_image">165dp</dimen>
+
+    <dimen name="text_size_item_list_animal_tablet">17dp</dimen>
+    <dimen name="text_size_header_list_animal_tablet">19dp</dimen>
+    <dimen name="text_size_item_calendar_auto_tablet">19dp</dimen>
+    <dimen name="margin_text_value_tablet">80dp</dimen>
+    <dimen name="margin_text_value_with_image_tablet">110dp</dimen>
+    <dimen name="margin_text_value_overload_tablet">140dp</dimen>
+    <dimen name="margin_text_overload_with_image_tablet">170dp</dimen>
+    <dimen name="margin_text_value_error_with_image_tablet">200dp</dimen>
+
+</resources>

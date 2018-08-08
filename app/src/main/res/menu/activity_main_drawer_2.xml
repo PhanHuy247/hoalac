@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        android:layout_gravity="end"
+        android:gravity="end">
+        <item
+            android:id="@+id/nav_overview"
+            android:title="@string/overView"/>
+        <item
+            android:id="@+id/nav_coolingSystem"
+            android:title="@string/coolingSystem" />
+        <item
+            android:id="@+id/nav_foodWater"
+            android:title="@string/foodWater" />
+        <item
+            android:id="@+id/collectEggsRemoveFeces"
+            android:title="@string/collectEggsRemoveFeces" />
+        <item
+            android:id="@+id/nav_automan"
+            android:title="@string/automan" />
+        <item
+            android:id="@+id/nav_system"
+            android:title="@string/system" />
+        <item
+            android:id="@+id/nav_calendarAuto"
+            android:title="@string/calendarAuto" />
+        <item
+            android:id="@+id/selectFarm"
+            android:icon="@mipmap/ic_change_sector"
+            android:title="@string/selectGreenHouse" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@mipmap/ic_menu_dangxuat"
+            android:title="@string/menu_logout" />
+        <item
+            android:layout_marginTop="20dp"
+            android:id="@+id/nav_lang"
+            android:title=""
+            android:icon="@mipmap/ic_menu_language"
+            app:actionLayout="@layout/switch_language"/>
+    </group>
+
+</menu>

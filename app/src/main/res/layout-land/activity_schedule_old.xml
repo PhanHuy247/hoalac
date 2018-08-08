@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vnpt.iot.hoalac.core.activity.control.ScheduleActivity">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/menu_irrigation_more"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Spinner
+                    android:id="@+id/spStatus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/spHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <Spinner
+                android:id="@+id/spDevice"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <Spinner
+                android:id="@+id/spType"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/subValue1"
+                    android:text="@string/from"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/value1"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical|center"
+                    android:id="@+id/subValue2"
+                    android:text="@string/to"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/value2"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:onClick="save"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_green_radius"
+                    android:text="@string/done"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

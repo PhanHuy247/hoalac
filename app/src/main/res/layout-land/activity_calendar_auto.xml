@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normalBackground"
+    tools:context=".core.activity.calendarAuto.CalendarAuto">
+    <RelativeLayout
+        android:background="@color/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:onClick="pressBack"
+            android:background="@color/nonColor"
+            android:src="@mipmap/btn_back_white"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtAutoCalendar"
+            android:textAllCaps="true"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/menu_irrigation_more"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/lvCalendarAuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_10dp"></ListView>
+</LinearLayout>
